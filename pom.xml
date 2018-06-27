@@ -34,7 +34,4 @@
 
 	</dependencies>
 	
-	<build>
-		<groupId>org.apache.maven.plugins</groupId>
-	</build>
 </project>

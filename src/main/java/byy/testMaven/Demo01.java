@@ -1,32 +1,21 @@
-package byy.testMaven;
+package main.java.byy.testMaven;
 
 import org.testng.annotations.Test;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterGroups;
-import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.AfterClass;
 
 public class Demo01 {
 	@Test
-	public void f0() {
-		System.out.println("Demo 01_0");
-	}
-	
-	@Test(groups="a")
-	public void f1() {
-		System.out.println("Demo 01_1");
-	}
-	
-	@Test
-	public void f2() {
-		System.out.println("Demo 01_2");
+	public void f() {
+		System.out.println("Demo01 TestCase");
 	}
 
-	@BeforeMethod
-	public void beforeMethod() {
+	@BeforeClass
+	public void beforeClass() {
 	}
 
-	@AfterMethod
-	public void afterMethod() {
+	@AfterClass
+	public void afterClass() {
 	}
 
 }

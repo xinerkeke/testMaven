@@ -3,10 +3,7 @@
 <suite name="Suite">
   <test name="Test">
     <classes>
-      <class name="byy.testMaven.AppTest"/>
-      <class name="byy.testMaven.Demo01"/>
-      <class name="byy.testMaven.Demo03"/>
-      <class name="byy.testMaven.Demo02"/>
+      <class name="main.java.byy.testMaven.Demo01"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

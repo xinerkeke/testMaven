@@ -1,4 +1,4 @@
-package byy.testMaven;
+package main.java.byy.testMaven;
 
 /**
  * Hello world!
