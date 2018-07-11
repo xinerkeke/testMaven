@@ -34,7 +34,7 @@
 
 	</dependencies>
 	
-	 <build>
+	<build>
         <finalName>Test</finalName>
         <plugins>
             <plugin>
