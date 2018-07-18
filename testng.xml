@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
-    <classes>
-      <class name="main.java.byy.testMaven.Demo01"/>
-      <class name="main.java.byy.testMaven.BaseTest"></class>
-    </classes>
-  </test> <!-- Test -->
+<suite name="Suite" parallel="false">
+	<test name="testMaven">
+		<classes>
+			<class name="main.java.byy.testMaven.Demo01" />
+			<class name="main.java.byy.testMaven.Demo02" />
+			<class name="main.java.byy.testMaven.Demo03" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->
