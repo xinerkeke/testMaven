@@ -4,10 +4,10 @@ import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 
-public class Demo01 {
+public class Demo02 {
 	@Test
-	public void f1() {
-		System.out.println("Demo01 TestCase");
+	public void f2() {
+		System.out.println("Demo02 TestCase");
 		
 	}
 
