@@ -1,27 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="testMaven" default="run" basedir=".">
-<property name="src.dir" value="src/test/java"/>
-<property name="build.dir" />
-<property name="dest" value="classes"/>
-<property name="helloant_jar" value="helloant.jar"/>
-<target name="init">
-   <mkdir dir="${dest}"/>
-</target>
-<target name="compile" depends="init">
-   <javac srcdir="${src}" destdir="${dest}" includeantruntime="on"/>
-</target>
-<target name="build" depends="compile">
-   <jar jarfile="${helloant_jar}" basedir="${dest}"/>
-</target>
-<target name="run" depends="build">
-   <java classname="byy.testMaven.HelloAnt" classpath="${helloant_jar}"/>
-</target>
-<target name="clean">
-   <delete dir="${dest}" />
-   <delete file="${helloant_jar}" />
-</target>
-<target name="rerun" depends="clean,run">
-   <ant target="clean" />
-   <ant target="run" />
-</target>
+<project name="testMaven" basedir=".">
+	<property name="lib.dir" value="lib" />
+	<path id="test.classpath">
+		<!-- adding the saxon jar to your classpath -->
+		<fileset dir="${lib.dir}" includes="*.jar" />
+	</path>
+	<target name="transform">
+		<!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
+		<xslt in="E:/selenium/work/testMaven/test-output/testng-results.xml" style="E:/selenium/work/testMaven/test-output/testng-results.xsl" out="E:/selenium/work/testMaven/test-output/report.html">
+			<!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
+			<param name="testNgXslt.outputDir" expression="E:/selenium/work/testMaven/test-output" />
+			<classpath refid="test.classpath" />
+		</xslt>
+	</target>
 </project>
