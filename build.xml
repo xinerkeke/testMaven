@@ -1,4 +1,4 @@
-<project name="testMaven" basedir=".">
+<project name="testMvn" basedir=".">
 	<property name="lib.dir" value="lib" />
 	<path id="test.classpath">
 		<!-- adding the saxon jar to your classpath -->
