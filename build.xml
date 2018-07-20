@@ -6,7 +6,12 @@
 	</path>
 	<target name="transform">
 		<!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
+		<!--
 		<xslt in="E:/selenium/work/testMaven/test-output/testng-results.xml" style="E:/selenium/work/testMaven/test-output/testng-results.xsl" out="E:/selenium/work/testMaven/test-output/report.html">
+		-->
+		<xslt in="E:/jenkins/workspace/testMvn/target/surefire-reports/testng-results.xml" 
+		style="E:/jenkins/workspace/testMvn/test-output/testng-results.xsl" 
+		out="E:/jenkins/workspace/testMvn/target/surefire-reports/index.html">
 			<!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
 			<param name="testNgXslt.outputDir" expression="E:/selenium/work/testMaven/test-output" />
 			<classpath refid="test.classpath" />
