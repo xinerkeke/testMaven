@@ -13,7 +13,7 @@
 		style="E:/jenkins/workspace/testMvn/test-output/testng-results.xsl" 
 		out="E:/jenkins/workspace/testMvn/target/surefire-reports/report.html">
 			<!-- 需要根据自己的环境进行配置（将E:/workspace/testNG/替换成你自己project的目录） -->
-			<param name="testNgXslt.outputDir" expression="E:/jenkins/workspace/testMvn/target/surefire-reports" />
+			<param name="E:/jenkins/workspace/testMvn/target/surefire-reports" />
 			<classpath refid="test.classpath" />
 		</xslt>
 	</target>
