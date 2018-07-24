@@ -3,7 +3,7 @@
 <suite name="Suite" parallel="false">
 	<test name="testMaven">
 		<classes>
-			<class name="main.java.byy.testMaven.testUserMan" />
+			<class name="main.java.byy.testMaven.TestAddCookies" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
