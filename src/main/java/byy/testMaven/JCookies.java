@@ -150,7 +150,7 @@ public class JCookies {
 	public Date getNextDate(Date date) {
 		Calendar c = Calendar.getInstance();
 		c.setTime(date);
-		c.add(Calendar.DAY_OF_YEAR, 1);// ����+1��
+		c.add(Calendar.DAY_OF_YEAR, 1);
 
 		Date nextDay = c.getTime();
 		return nextDay;
@@ -165,10 +165,10 @@ public class JCookies {
 			Date local = new Date();
 			System.out.println(local.toString());
 			if (DATE1.getTime() > local.getTime()) {
-				System.out.println("dt1 ��dt2ǰ");
+				System.out.println("");
 				return false;
 			} else if (DATE1.getTime() < local.getTime()) {
-				System.out.println("dt1��dt2��");
+				System.out.println("");
 				return true;
 			} else {
 				return true;
