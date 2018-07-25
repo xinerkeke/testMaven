@@ -46,7 +46,6 @@ public class BaseTest {
 		try {
 			
 			String str = driver.findElement(By.tagName("body")).getText();
-			System.out.println(str);
 			
 			return str.contains(what);
 		} catch (Exception e) {
