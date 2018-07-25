@@ -21,7 +21,7 @@ public class TakeScreenShot {
 		
 		pps = new Properties();
 		pps.load(new FileInputStream(System.getProperty("user.dir")
-				+ "/src/testng.properties"));
+				+ "/src/main/java/byy/testMaven/test.properties"));
 		String screenPath = pps.getProperty("screenPath");
 		
 		File dir = new File(screenPath);
